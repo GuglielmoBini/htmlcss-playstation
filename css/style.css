@@ -2,7 +2,11 @@
 .jumbo-bottom [class^="col"],
 #playstation-5 [class^="col"],
 .newgames [class^="col"],
-#playstation-4 [class^="col"] {
+#playstation-4 [class^="col"],
+#ps-plus [class^="col"],
+#psstore-deals [class^="col"],
+#ps-now [class^="col"],
+#socials [class^="col"] {
   min-height: 200px;
   border: red dashed 1px;
 }
@@ -63,4 +67,16 @@ h2 {
 
 .it-takes-two > div:first-child {
   height: 675px;
+}
+
+/* Ps Plus */
+#ps-plus {
+  background-color: #bebcbb;
+}
+
+/* Sconti Ps Store */
+
+/* Ps Now */
+#ps-now {
+  background-color: #151c3b;
 }
