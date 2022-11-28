@@ -1,7 +1,8 @@
 /* UTILS */
 .jumbo-bottom [class^="col"],
 #playstation-5 [class^="col"],
-.newgames [class^="col"] {
+.newgames [class^="col"],
+#playstation-4 [class^="col"] {
   min-height: 200px;
   border: red dashed 1px;
 }
