@@ -1,3 +1,10 @@
+/* UTILS */
+.jumbo-bottom [class^="col"],
+#playstation-5 [class^="col"] {
+  min-height: 200px;
+  border: red dashed 1px;
+}
+
 /* GENERICS */
 img {
   max-width: 100%;
@@ -21,15 +28,18 @@ img {
   font-weight: bold;
 }
 
-#jumbotron {
+.jumbo-top {
   margin-top: 110px;
   background-image: url(../img/jumbo-bg.png);
   background-size: cover;
   background-position: center;
+}
+
+.jumbo-top > div:first-child {
   height: 675px;
 }
 
-#jumbotron h2 {
+.jumbo-top h2 {
   font-size: 40px;
 }
 
