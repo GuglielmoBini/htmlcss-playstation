@@ -1,1 +1,36 @@
+/* GENERICS */
+img {
+  max-width: 100%;
+}
+/* HEADER */
+#header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
 
+#header-top .img-cs-logo {
+  max-height: 15px;
+  margin: 10px;
+}
+
+.nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+#jumbotron {
+  margin-top: 110px;
+  background-image: url(../img/jumbo-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 675px;
+}
+
+#jumbotron h2 {
+  font-size: 40px;
+}
+
+/* MAIN */
