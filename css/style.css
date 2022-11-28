@@ -1,6 +1,7 @@
 /* UTILS */
 .jumbo-bottom [class^="col"],
-#playstation-5 [class^="col"] {
+#playstation-5 [class^="col"],
+.newgames [class^="col"] {
   min-height: 200px;
   border: red dashed 1px;
 }
@@ -9,7 +10,13 @@
 img {
   max-width: 100%;
 }
+
+h2 {
+  font-size: 40px;
+}
+
 /* HEADER */
+/* Header-top */
 #header-top {
   position: fixed;
   top: 0;
@@ -28,6 +35,7 @@ img {
   font-weight: bold;
 }
 
+/* jumbotron */
 .jumbo-top {
   margin-top: 110px;
   background-image: url(../img/jumbo-bg.png);
@@ -39,8 +47,19 @@ img {
   height: 675px;
 }
 
-.jumbo-top h2 {
-  font-size: 40px;
+/* MAIN */
+/* Playstaion 5 */
+
+/* Nuove uscite */
+#newreleases {
+  background-color: #1f1f1f;
+}
+.it-takes-two {
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-/* MAIN */
+.it-takes-two > div:first-child {
+  height: 675px;
+}
