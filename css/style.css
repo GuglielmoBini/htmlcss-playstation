@@ -15,11 +15,6 @@
   color: #727272;
 }
 
-.text-b-grey,
-.text-b-lightblue {
-  font-weight: bold;
-}
-
 /* GENERICS */
 img {
   max-width: 100%;
@@ -39,6 +34,11 @@ ul {
   background-position: center;
 }
 
+.text-b-grey,
+.text-b-lightblue {
+  font-weight: bold;
+}
+
 /* HEADER */
 /* Header-top */
 #header-top {
@@ -55,8 +55,19 @@ ul {
 }
 
 .nav-link {
-  color: black;
   font-weight: bold;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item > img {
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 /* jumbotron */
@@ -69,8 +80,20 @@ ul {
   height: 675px;
 }
 
+.jumbo-bottom img {
+  transition: transform 0.3s;
+}
+
 /* MAIN */
 /* Playstaion 5 */
+#playstation-5 .col::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 3px;
+}
 
 /* Nuove uscite */
 #newreleases {
@@ -112,8 +135,18 @@ footer {
   text-decoration: none;
 }
 
+/* EFFETTI HOVER */
+.jumbo-bottom img:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+#playstation-5 .col:hover::after {
+  background-color: #0072ce;
+}
+
 /* MEDIA QUERY */
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 500px) {
   .jumbo-top img,
   .it-takes-two img {
     max-width: 60%;
@@ -125,13 +158,13 @@ footer {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #playstation-5 > .row:last-child img {
     max-width: 50%;
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .jumbo-top img {
     max-width: 100%;
   }
