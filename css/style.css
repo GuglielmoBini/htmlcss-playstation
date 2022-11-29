@@ -1,15 +1,23 @@
 /* UTILS */
-.jumbo-bottom [class^="col"],
-#playstation-5 [class^="col"],
-.newgames [class^="col"],
-#playstation-4 [class^="col"],
-#ps-plus [class^="col"],
-#psstore-deals [class^="col"],
-#ps-now [class^="col"],
-#socials [class^="col"],
-footer [class^="col"] {
-  min-height: 200px;
-  border: red dashed 1px;
+.br-radius {
+  border-radius: 25px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-b-lightblue {
+  color: #0072ce;
+}
+
+.text-b-grey {
+  color: #727272;
+}
+
+.text-b-grey,
+.text-b-lightblue {
+  font-weight: bold;
 }
 
 /* GENERICS */
@@ -23,6 +31,12 @@ h2 {
 
 ul {
   list-style-type: none;
+}
+
+.jumbo-top,
+.it-takes-two {
+  background-size: cover;
+  background-position: center;
 }
 
 /* HEADER */
@@ -49,8 +63,6 @@ ul {
 .jumbo-top {
   margin-top: 110px;
   background-image: url(../img/jumbo-bg.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .jumbo-top > div:first-child {
@@ -66,8 +78,6 @@ ul {
 }
 .it-takes-two {
   background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .it-takes-two > div:first-child {
@@ -103,14 +113,25 @@ footer {
 }
 
 /* MEDIA QUERY */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 499px) {
   .jumbo-top img,
   .it-takes-two img {
     max-width: 60%;
   }
+
+  #ps-plus .row .row img,
+  #ps-now .row .row img {
+    max-width: 70%;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
+  #playstation-5 > .row:last-child img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 991px) {
   .jumbo-top img {
     max-width: 100%;
   }
