@@ -142,6 +142,15 @@ footer {
   background-color: #0072ce;
 }
 
+a[class^="btn btn-danger"]:hover,
+a[class^="btn btn-light"]:hover {
+  box-shadow: 0 0 2px 3px black inset;
+}
+
+a[class^="btn btn-primary"]:hover {
+  box-shadow: 0 0 1px 3px white inset;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 500px) {
   .jumbo-top img,
